@@ -1,0 +1,115 @@
+/** Variabelen **/
+/*kleuren*/
+@softmagenta :          #e570e7;
+@moderatemagenta:       #c85ec7;
+@darkmoderatemagenta:   #a849a3;  
+@brightmagenta:         #e93cec;
+@outerglow:             rgba(0, 0, 0, 0.5);
+
+/*einde variabelen*/
+/* mixins*/
+    .abackground{
+        background: @softmagenta;
+        background: -moz-linear-gradient(top, @softmagenta 0%, @brightmagenta 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @softmagenta), color-stop(100%, @brightmagenta));
+        background: -webkit-linear-gradient(top, @softmagenta 0%, @brightmagenta 100%);
+        background: -o-linear-gradient(top, @softmagenta 0%, @brightmagenta 100%);
+        background: -ms-linear-gradient(top, @softmagenta 0%, @brightmagenta 100%);
+        background: linear-gradient(to bottom, @softmagenta 0%, @brightmagenta 100%);
+        /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='@stop', GradientType=0); */
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@softmagenta', endColorstr='@brightmagenta', GradientType=0);
+    }
+    .boxshadow{
+        box-shadow: 0 0.25em 0.375em @outerglow;
+        -moz-box-shadow: 0 0.25em 0.375em @outerglow;
+        -webkit-box-shadow: 0 0.25em 0.375em @outerglow;    
+    }
+/*einde mixins*/
+body{
+background-image: url(data:image/png;base64,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);
+  
+background-color: #b6b1b1;
+
+}
+
+.hor_dropdown_menu {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    /*16px*/
+
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: @softmagenta;
+    background: -moz-linear-gradient(top,@softmagenta 0%, @moderatemagenta 47%, @darkmoderatemagenta 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @softmagenta), color-stop(47%, @moderatemagenta), color-stop(100%, @darkmoderatemagenta));
+    background: -webkit-linear-gradient(top, @softmagenta 0%, @moderatemagenta 47%, @darkmoderatemagenta 100%);
+    background: -o-linear-gradient(top, @softmagenta 0%, @moderatemagenta 47%, @darkmoderatemagenta 100%);
+    background: -ms-linear-gradient(top, @softmagenta 0%, @moderatemagenta 47%, @darkmoderatemagenta 100%);
+    background: linear-gradient(to bottom, @softmagenta 0%, @moderatemagenta 47%, @darkmoderatemagenta 100%);
+    .boxshadow;
+  
+    & li {
+        float: left;
+        position: relative;
+        margin: 0;
+        list-style: none;
+      
+        &:hover{
+            & > a {
+                .abackground;
+            }/*li hover a*/
+        
+            & > ul {
+                opacity: 1;
+                visibility: visible;
+            }/*li hover ul*/  
+        }  
+        
+    }/*li*/
+     
+    & a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0.6em 1.25em;
+    }/*a*/
+     
+    & .actief > a {
+        .abackground;
+    }/*active a*/
+    & ul {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+        width: 12em;
+        background: @moderatemagenta;
+        -moz-transition: opacity .25s linear, visibility .1s linear .1s;
+        -webkit-transition: opacity .25s linear, visibility .1s linear .1s;
+        -o-transition: opacity .25s linear, visibility .1s linear .1s;
+        transition: opacity .25s linear, visibility .1s linear .1s;
+        .boxshadow;
+        
+        & li {
+            float: none;
+            margin: 0;
+            
+            &:hover > ul {
+                /*enkel voor extra transition effectje subsub: beweging left*/
+
+                left: 11em;
+            }        
+        }/*ul li*/
+        & ul {
+            top: 0.6em;
+            left: 13em;
+            -moz-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+            -webkit-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+            -o-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+            transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+        }/*ul ul*/
+    }/*ul*/
+}

@@ -1,0 +1,229 @@
+/*stylesheet taak webontwikkelaar deel 1*/
+
+/****algemeen****/
+/*div, ul, aside, header, footer{outline: 1px dashed red;}*/
+div {
+	margin:0;
+	padding:0;
+	}
+body {
+	background-color: #FCFAF8;
+	color: #000;
+	font: small Arial, sans-serif;
+	width:100%;
+    margin:0;
+	padding:0;
+}
+a, a:visited{
+    text-decoration: none;
+    color: #4C86CF;
+    font-weight: bold;
+}
+a:hover, a:active{
+    text-decoration: underline;
+    color: #058;
+}
+ul {
+	margin: 0;
+	padding: 1em;
+}
+h1{
+    color: #7ea107;
+    font-size: 2.7em;
+}
+h2 {
+    color: #7ea107;
+    font-size: 1.4em;
+}
+h3{
+    color: #52463f;
+}
+p em{
+    color: #9A3098;
+    font-weight: bold;
+}
+
+/****container class****/
+
+.container  {
+    width: 80%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/****header****/
+header {
+	margin: 0 0 1em 0 ;
+	position: relative;
+	padding:0;
+    border-bottom: 1.5px solid #DCDAD8;
+}
+/*login*/
+.login{
+    background-color: #8FB209;
+    color: white;
+}
+.loginform{
+    text-align: right;
+}
+.loginform .button {
+    background-color: #6D9207; 
+    padding: 2px 4px;
+    font: 13px sans-serif;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-color: #aaa #444 #444 #aaa;
+    color: #000;
+}
+#submit {    
+    padding: 2px 4px;
+    background-color:  #6D9207;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;    
+    border: 1px solid #047B00;
+}
+
+/*logo*/
+#logo{
+    float: left;
+}
+
+/*nav*/
+header ul {
+	padding: 0;
+	list-style: none;
+}
+header li {
+	display: inline;
+	margin: 0 0 0 1em ;
+}
+header nav {
+}
+.hoofdmenu{
+    margin:1em auto 0;
+    text-align: right;
+}
+.hoofdmenu ul li {
+    position:relative;
+    top:5.5em;
+    border-right: 1px solid #DCDAD8;
+    padding-right: 1em;
+}
+.hoofdmenu ul li:last-child{
+    padding-right: 0;
+    border: 0;
+}
+.hoofdmenu ul li a, .hoofdmenu ul li a:visited{
+    font-weight: bold;
+    color: #423131;
+}
+.hoofdmenu ul li a:hover, .hoofdmenu ul li a:active{
+    color: #755e5e;
+}
+
+/*inleiding*/
+.inleiding{
+	position: relative;
+	padding:0;
+    border-bottom: 1.5px solid #DCDAD8;    
+}
+.inleidingTekst{
+    float: left;
+    padding-bottom: 2em;
+}
+#inleidingimg {
+    border-color:#E9DCE9;
+    float:right;
+    border-width: 7px;
+    border-style:solid;
+    margin-bottom: 0.5em;
+    height:13em;
+    position: relative;
+    top: 3em;
+}
+.inleiding h2{
+    color: #52463f;
+}
+
+
+/*opleiding*/
+.opleiding{
+    margin: 0 0 1em 0;
+	position: relative;
+	padding:  1em 0;
+    border-bottom: 1.5px solid #DCDAD8;
+    background-color: #EBE8E5;
+}
+#opleidingimg{
+    float:left;     
+    border-color:#E9DCE9;
+    margin-right: 1em;
+    border-width: 5px;
+    border-style:solid;
+    position:relative;
+    top:-3.5em;    
+}
+.opleiding ul{
+    clear: both;
+    list-style-image:url('../img/check.png');
+    list-style-position: outside;
+    position:relative;
+    left: 1em;
+    top: -1em;
+}
+.opleiding ul li{  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: justify;
+    width:33%;
+    min-width: 10em;
+    float:left;
+    display:list-item; 
+    height:8em;
+    padding:1em 4em 1em 1em;
+}
+/*nieuws*/
+.nieuws{
+    margin: 0 0 1em 0;
+	position: relative;
+	padding:  1em 0;
+    border-bottom: 1.5px solid #DCDAD8;
+}
+.nieuws article{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: justify;
+    width:33%;
+    min-width: 10em;
+    float:left; 
+    padding:1em 1em;   
+}
+#html5logo{
+    float: right;
+}
+code{
+    color: #8B1C00;
+}
+/*footer*/
+footer .italic{
+    font-style: italic;
+}
+
+/**CLEARFIX!!**/
+
+/*clearFix hack*/
+.clearFix:before, .clearFix:after{
+    content:  " ";
+    display: table;
+}
+.clearFix:after{
+    clear: both;
+}
+
+/* enkel voor IE6/7*/
+.clearFix{
+    *zoom: 1;
+}

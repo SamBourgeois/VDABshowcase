@@ -1,0 +1,129 @@
+header{
+    background-color: RGB(223,240,216);    
+}
+header label{
+    font-weight: normal;
+    color: green;
+}
+#intro{
+    padding: 1em 0;
+}
+.bluehead{
+    background-color: RGB(217,237,247);
+    padding: 1em 0;
+}
+.bluehead h1, .bluehead strong, .bluehead p{
+    color:  RGB(58,135,173);
+}
+
+#map{
+    max-width: 100%;
+    max-height: 100%;    
+}
+
+.flexrow{
+    /*box*/
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    flex-direction:row;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+#image2{
+    /*box*/
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    flex-direction:column;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+    
+}
+
+#image2>div:first-child{
+    /*box*/
+    flex-grow: 2;
+    flex-basis: auto;
+}
+#image2>div:last-child{
+    /*box*/
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-top: 1em;  
+}
+
+
+#image21>div:first-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env1.jpg);
+    
+    flex-grow: 1;
+    flex-basis: auto;    
+    margin-right: 0.5em;
+}
+#image21>div:last-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env4.jpg);
+
+    flex-grow: 1;
+    flex-basis: auto; 
+    margin-left: 0.5em;
+}
+
+
+#image22>div{
+    /*box*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+#image22>div:first-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env2.jpg);
+    
+    /*box*/
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-right: 0.5em;
+}
+#image22>div:last-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env3.jpg);
+    
+    /*box*/    
+    flex-grow: 2;
+    flex-basis: auto;
+    margin-left: 0.5em;
+}
+
+.form-horizontal label{
+    font-weight: normal;
+    width: 10em;
+}
+.form-horizontal label{
+    font-weight: normal;
+    width: 10em;
+}
+.form-horizontal .col-sm-10{
+    padding-left: 10em;
+}
+.form-horizontal .controls *{
+    width: 15em;
+}
+footer{
+    background-color: RGB(245,245,245);
+    border-top: 1px solid grey;
+    padding: 1em 0; 
+}

@@ -1,0 +1,642 @@
+@import url(http://fonts.googleapis.com/css?family=Prosto+One);
+/*stylesheet taak webontwikkelaar deel 1*/
+
+/*******algemeen*******/
+
+div {
+	margin:0;
+	padding:0;
+	}
+body {
+    /*typografie*/
+    font: "Prosto One", small Arial, sans-serif;  
+    font-size: 14px;  
+    
+    /*kleur en backgrounds*/
+    color: #000;
+	background-color: #FCFAF8;
+	
+	
+    /*box*/
+	width:100%;
+    margin:0;
+	padding:0;
+}
+.container  {
+    /*box*/
+    width: 80%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/**Links**/
+a, a:visited{
+    /*typografie*/
+    font-weight: bold;
+    text-decoration: none;
+    
+    /*kleuren en backgrounds*/    
+    color: #4C86CF;
+}
+a:hover, a:active{
+    /*typografie*/
+    text-decoration: underline;
+    
+    /*kleuren en backgrounds*/
+    color: #058;
+}
+
+
+/**Headers**/
+h1{
+    /*typografie*/
+    font-size: 2.7em;
+    
+    /*kleuren en backgrounds*/
+    color: #7ea107;    
+}
+h2 {
+    /*typografie*/
+    font-size: 1.4em;
+    
+    /*kleuren en backgrounds*/
+    color: #7ea107;    
+}
+h3{
+    /*kleuren en backgrounds*/
+    color: #52463f;
+}
+
+ul {
+    /*box*/
+	margin: 0;
+	padding: 1em;
+}
+em{
+    /*typografie*/
+    font-weight: bold;
+}
+code{
+    /*typografie*/
+    font-weight: bolder;
+    
+    /*kleuren en backgrounds*/
+    color: #8B1C00;
+    
+}
+img{
+    /*kleuren en backgrounds*/
+    border-color:#E9DCE9 ;
+    
+    /*box*/
+    border-width: 7px;
+    border-style:solid;
+    margin: 0.5em;
+}
+/*******EINDE algemeen*******/
+
+/*******structuur*******/
+/**header**/
+header {	
+    /*box*/
+	position: relative;
+	padding:0;
+    border-bottom: 1.5px solid #DCDAD8;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+}
+/*login*/
+.login{
+    /*kleuren en backgrounds*/
+    background-color: #8FB209;
+    color: white;
+}
+.loginform{
+    /*typografie*/
+    text-align: right;
+}
+.loginform .submit {
+    /*kleuren en backgrounds*/
+    background-color:  #6D9207; 
+    
+    /*box*/   
+    padding: 2px 4px;    
+    text-decoration: none; 
+}
+
+/*logo*/
+#logo img{
+    /*box*/
+    float: left;
+    border:none;
+}
+
+/**footer**/
+footer{
+    /*box*/
+    border-top: 1.5px solid #DCDAD8;
+}
+
+footer .italic{
+    /*typografie*/
+    font-style: italic;
+}
+
+/**3 kolommen**/
+.kol3{
+    /*box*/
+    margin: 0 0 1em 0;
+	position: relative;
+	padding:  1em 0;
+}
+.kol3 article{
+    /*typografie*/
+    text-align: justify;
+    
+    /*box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    width:33%;
+    min-width: 10em;
+    float:left; 
+    padding:1em 1em;   
+}
+
+/*inleiding*/
+.inleidingTekst{
+    /*box*/
+    float: left;
+    padding-bottom: 2em;
+    width: 40em;
+}
+.inleidingimg {
+    /*box*/    
+    float:right;    
+    position: relative;
+    height:13em;    
+    top: 3em;
+}
+/*******EINDE structuur*******/
+
+/*******content*******/
+/**grijs**/
+.grijsBg{
+    /*kleuren en backgrounds*/
+    background-color: #EBE8E5;
+    
+    /*box*/
+    margin: 0 0 1em 0;
+	position: relative;
+	padding:  1em 0;
+    border-bottom: 1.5px solid #DCDAD8;
+    border-top: 1.5px solid #DCDAD8;    
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+.grijsBg::before {
+    /*box*/
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    z-index: 100;
+}
+.paars{
+    /*kleuren en backgrounds*/
+    color: #9A3098;
+}
+.submit{
+    /*kleuren en backgrounds*/
+	color: white;
+    
+    /*box*/
+	cursor: pointer;
+	border: 1px solid #047B00;
+}
+
+/**image rotatie**/
+img.rotate {  
+    /*box*/   
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    margin: 1em 3em 2em;
+    position:relative;
+    transform: rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -webkit-transform: rotate(10deg); 
+    z-index: 1;  
+}
+.revrotate {   
+    /*box*/ 
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    position:relative;
+    transform: rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -webkit-transform: rotate(-10deg); 
+    z-index: 1;  
+}
+/*******EINDE content*******/
+
+/*******hoofdmenu*******/
+header ul {
+    /*typografie*/
+    list-style: none;
+    
+    /*box*/
+	padding: 0;
+	
+}
+header li {
+    /*box*/
+	display: inline;
+	margin: 0 0 0 1em ;
+}
+.hoofdmenu{
+    /*typografie*/
+    text-align: right;
+    
+    /*box*/
+    margin:1em auto 0;    
+}
+.hoofdmenu ul li {
+    /*box*/
+    position:relative;
+    top:5.5em;
+    border-right: 1px solid #DCDAD8;
+    padding-right: 1em;
+}
+.hoofdmenu ul li:last-child{
+    /*box*/
+    padding-right: 0;
+    border: 0;
+}
+.hoofdmenu ul li a, .hoofdmenu ul li a:visited{
+    /*kleuren en backgrounds*/
+    font-weight: bold;
+    color: #423131;
+}
+.hoofdmenu ul li a:hover, .hoofdmenu ul li a:active{
+    /*kleuren en backgrounds*/
+    color: #755e5e;
+}
+/*******EINDE hoofdmenu*******/
+
+
+/*******pagina specifiek*******/
+
+/*** home-pagina ***/
+
+h2.inleidingh2{
+    /*kleuren en backgrounds*/
+    color: #52463f;
+}
+
+
+.opleidingimg{
+    /*box*/
+    float:left;    
+    position:relative;
+    top:-3.5em; 
+    margin-right: 3em;   
+}
+.oplarg{
+    /*typografie*/
+    list-style-image:url('../img/check.png');
+    list-style-position: outside;
+    
+    /*box*/
+    clear: both;    
+    position:relative;
+    left: 1em;
+    top: -1em;
+}
+.oplarg li{  
+    /*typografie*/
+    text-align: justify;
+    
+    /*box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    width:33%;
+    min-width: 10em;
+    float:left;
+    display:list-item; 
+    height:8em;
+    padding:1em 4em 1em 1em;
+}
+#html5logo{
+    /*box*/
+    float: right;
+    border: none;
+}
+
+
+/*** wat-pagina ***/
+#mockup{
+    /*box*/
+    width:75%;
+    margin: 0 auto;
+    position: relative;
+    left: 2.5em;    
+}
+
+
+/*** wie-pagina ***/
+.lijstwebontw ul {
+    /*typografie*/
+    list-style-type: none; 
+    
+    /*box*/
+    clear:both;
+     
+}
+
+.lijstwebontw li {
+    /*box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    width:25%;
+    padding:1em;
+}
+.teamlid{
+    /*box*/
+    width: 12.5em;
+}
+.lijstwebontw h3, .lijstwebontw p {
+    /*box*/
+    margin: 0;
+}
+.rotate li:nth-child(even) img{   
+    /*box*/  
+    margin:1.250em;
+    transform: rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    width: 10em;
+}
+.rotate li:nth-child(odd) img{   
+    /*box*/  
+    margin:1.250em;
+    transform: rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    width: 10em;
+}
+.rotate li:nth-child(odd) p, .rotate li:nth-child(odd) h3{ 
+    /*typografie*/ 
+    text-align: right;    
+}
+
+
+/***contactpagina ***/
+
+.contactWaar{
+    /*box*/
+    float:left;
+    width:60%;
+    min-width:25em;
+}
+.vdabadres {
+    /*box*/
+    float:right;
+    width:40%;
+    position:relative;
+    top:5.75em;
+}
+
+.vdabadres ul {
+    /*typografie*/
+    list-style-type: none;
+}
+.vdabadres ul li {
+    /*box*/
+    margin-bottom: 0.1em
+}
+#map{
+    /*box*/
+    border:0;    
+    display:block;
+    margin:auto;
+    max-width: 100%;
+    max-height: 100%;     
+}
+
+.images{
+    /*box*/
+    margin-top: 1em;
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    flex-direction:row;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;        
+}
+.images>div:first-child{
+    /*box*/
+    width: 50%;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.images>div:last-child{
+    /*box*/
+    flex-grow: 1;
+    flex-basis: auto;  
+    margin-left: 2em;    
+}
+#image2{
+    /*box*/
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    flex-direction:column;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+#image2>div:first-child{
+    /*box*/
+    flex-grow: 2;
+    flex-basis: auto;
+}
+#image2>div:last-child{
+    /*box*/
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-top: 1em;  
+}
+
+#image21{
+    /*box*/
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    flex-direction:row;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+#image21>div:first-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env1.jpg);
+
+    
+    /*box*/
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    
+    flex-grow: 1;
+    flex-basis: auto;    
+    margin-right: 0.5em;
+}
+#image21>div:last-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env4.jpg);
+
+    
+    /*box*/
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    
+    flex-grow: 1;
+    flex-basis: auto; 
+    margin-left: 0.5em;
+}
+
+#image22{
+    /*box*/
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    flex-direction:row;
+    
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+#image22>div{
+    /*box*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+#image22>div:first-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env2.jpg);
+    
+    /*box*/
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-right: 0.5em;
+}
+#image22>div:last-child{
+    /*kleuren en backgrounds*/
+    background-image: url(../img/env3.jpg);
+    
+    /*box*/    
+    flex-grow: 2;
+    flex-basis: auto;
+    margin-left: 0.5em;
+}
+
+
+/**contactform**/
+
+
+
+#contact {
+	width: 60em;     
+}
+#contact .error{
+    width: 35em;
+    float: left;
+}
+#contact label {
+	float: left;
+    width: 10em;
+}
+
+#contact input {
+	width: 15em;
+    float: left; 	
+}
+#contact textarea {
+    width: 15em;
+    float: left;     
+}
+#contact label:last-of-type{
+    width: 100%;
+}
+#contact label:last-of-type>input{
+    width: 1em;
+}
+#contact input[type=submit] {
+    /*typografie*/
+    text-transform: uppercase;
+    
+    /*kleuren en backgrounds*/
+    background-color:#7ea107;   
+    
+    /*box*/
+    width: 10em;
+    margin: 1em 10.5em;
+    padding: 0.25em;
+}
+
+
+/**CLEARFIX!!**/
+
+/*clearFix hack*/
+.clearFix:before, .clearFix:after{
+    content:  " ";
+    display: table;
+}
+.clearFix:after{
+    clear: both;
+}
+
+/* enkel voor IE6/7*/
+.clearFix{
+    *zoom: 1;
+}

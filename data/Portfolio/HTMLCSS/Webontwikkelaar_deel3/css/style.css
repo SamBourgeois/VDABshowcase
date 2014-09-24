@@ -1,0 +1,419 @@
+@import url(http://fonts.googleapis.com/css?family=Prosto+One);
+/*stylesheet taak webontwikkelaar deel 1*/
+
+/*******algemeen*******/
+
+body, div, article, section {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: "Prosto One", small Arial, sans-serif;  
+    font-size: 14px; 
+    color: #000;
+	background-color: #FCFAF8;	
+}
+.container  {
+    overflow: hidden;
+}
+
+/**Links**/
+a, a:visited{
+    font-weight: bold;
+    text-decoration: none;       
+    color: #4C86CF;
+}
+a:hover, a:active{   
+    text-decoration: underline;    
+    color: #058;
+}
+
+
+/**Headers**/
+h1{    
+    font-size: 2.7em;
+    color: #7ea107;    
+}
+h2 {
+   font-size: 1.4em;
+   color: #7ea107;    
+}
+h3{
+   color: #52463f;
+}
+
+ul {
+    margin: 0;
+	padding: 1em;
+}
+em{
+   font-weight: bold;
+}
+code{
+    font-weight: bolder;
+    color: #8B1C00;
+    
+}
+/**images**/
+.inleidingimg {
+    float:right;
+    max-width: 30%;
+    min-width: 10em;
+}
+
+.opleidingimg{
+    /*box*/
+    float:left;    
+    position:relative;
+    top:-3.5em; 
+    margin-right: 3em; 
+    max-width: 30%;
+    min-width: 10em;  
+}
+img.rotate {  
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    margin: 1em 3em 2em;
+    position:relative;
+    transform: rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -webkit-transform: rotate(10deg); 
+    z-index: 1;  
+}
+.revrotate {   
+    box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.5em 1em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.5em 1em rgba(0,0,0, 1);
+    position:relative;
+    transform: rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -webkit-transform: rotate(-10deg); 
+    z-index: 1;  
+}
+
+/**aside**/
+aside .time{
+    font-size: 0.9em;
+    font-style: italic;
+    position: relative;
+    top: 1em;
+}
+aside h3{
+    
+}
+/**footer**/
+footer{
+    border-top: 1.5px solid #DCDAD8;
+    clear: both;
+}
+
+footer .italic{
+    font-style: italic;
+}
+/*inleiding*/
+.inleidingTekst{
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+/**grijs**/
+.grijsBg{
+    background-color: #EBE8E5;
+    margin: 0 0 1em 0;
+	position: relative;
+	padding:  1em 0;
+    border-bottom: 1.5px solid #DCDAD8;
+    border-top: 1.5px solid #DCDAD8;    
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+.grijsBg::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    z-index: 100;
+}
+.oplarg{
+    list-style-image:url('../img/check.png');
+    list-style-position: outside;    
+    clear: both;    
+    position:relative;
+    left: 1em;
+    top: -1em;
+}
+.oplarg li{  
+    display:list-item; 
+    padding:1em 0;
+}
+#nieuws {
+    border: 1.5px solid #DCDAD8;
+    margin-bottom: 1em;
+    padding: 0 1%;
+}
+.paars{
+    color: #9A3098;
+}
+h2.inleidingh2{
+    color: #52463f;
+}
+
+
+#html5logo{
+    float: right;
+    border: none;
+}
+
+/*******EINDE algemeen*******/
+
+/*******PHONE*******/
+/*
+    alle images worden verborgen, het logo wordt gecentreert.
+    het login en het menu worden verticaal uitgelijnt
+    opleidings argumenten en nieuws berichten zijn onzichtbaar    
+*/
+img{
+    display: none;
+    border-color:#E9DCE9 ;    
+    border-width: 7px;
+    border-style:solid;
+    margin: 1%;
+}
+/*login*/
+.login{
+    background-color: #8FB209;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+label, input{
+    width: 100%;    
+}
+.submit{
+    color: white;
+    background-color:  #6D9207;
+    cursor: pointer;
+	border: 1px solid #047B00; 
+    text-decoration: none;
+    margin: 2px 0;
+    width: 102%;
+}
+
+/**header**/
+header {	
+    position: relative;
+	padding:0;
+    border-bottom: 1.5px solid #DCDAD8;   
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+/*logo*/
+
+#logo img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border:none;
+}
+
+/***hoofdmenu***/
+#hoofdmenu{
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+    width: auto;    
+}
+#hoofdmenu li{
+    display: block;
+    margin: 0;
+    padding:  0.4286em 1.1428em;
+    border-bottom: 1px solid #DCDAD8;
+    border-left: 1px solid #DCDAD8;
+    border-right: 1px solid #DCDAD8;
+}
+#hoofdmenu li:first-child{
+    border-top: 1px solid #DCDAD8;
+}
+#hoofdmenu a{
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
+    color: #423131;;
+}
+#hoofdmenu li:hover{
+    color: white;
+    background-color: #6D9207;
+}
+
+/***helper classes***/
+.phone-only{display: block;}
+.klein-tablet{display: none;}
+.groter-tablet{display: none;}
+.desktop{display: none;}
+
+
+@media screen and (min-width:361px) {
+    /***** klein TABLET *****/
+    /*
+        het menu wordt naast het logo geplaatst
+        opleidings argumenten en nieuws berichten worden getoont
+    */
+    .phone-only{display: none;}
+    .groter-tablet{display: none;}
+    .desktop{display: none;}
+    .klein-tablet {display: block;}
+
+    .container{
+        width: 94%;
+        margin: 0 auto;
+    }
+    #logo{
+        float: left;
+    }
+    #kopnav{
+        float: right;
+        width: 37.5%;
+    }
+    #hoofdmenu{
+        width: 100%;
+    }
+    #hoofdmenu li{text-align: right;}
+    aside h3{
+    background-image: url(../img/news.png);
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+}
+@media screen and (min-width:600px){
+    /***** groter TABLET *****/
+    /*
+        het inlog formulier wordt horizontaal uitgelijnt
+        images worden zichtbaar
+    */
+
+    /*helper classes*/
+    .phone-only{display: none;}
+    .desktop{display: none;}
+    .klein-tablet{display: block;}
+    .groter-tablet{display: block;}
+
+    img{display: block;}
+    .container{
+        overflow: visible;
+    }
+    .login{text-align: right;}
+    label, input,.submit{
+        width: auto; 
+    }
+    .inleidingTekst{
+        float: left;
+        padding-bottom: 2em;
+        width: 50%;
+    }       
+}
+@media screen and (min-width:780px) {
+    /***** DESKTOP *****/
+    /*
+        het menu wordt horizontaal naast het logo uitgelijnt
+        de opleidingsargumenten worden in 2 kollomen onderverdeelt        
+    */
+
+    .phone-only{display: none;}    
+    .klein-tablet{display: block;}
+    .groter-tablet{display: block;}
+    .desktop{display: block;}
+
+    #logo {
+        max-width: 30%;
+    }
+
+    #kopnav {
+        width: 70%;
+        float: right;
+        text-align: right;
+        margin: 1em 1em 0 0;
+    }
+
+    #hoofdmenu {
+        overflow: visible;
+    }
+
+    #hoofdmenu li {
+        text-align: right;
+        position: relative;
+        top: 4em;
+        font-size: 1.2em;
+        display: inline;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        border-right: 1px solid #DCDAD8;
+    }
+
+    #hoofdmenu li:first-child {
+        border-top: none;
+        border-left: 1px solid #DCDAD8;
+    }
+
+    #hoofdmenu li:hover {
+        color: #423131;
+        background-color: #FCFAF8;
+        text-decoration: underline;
+    }
+    .oplarg ul{padding-left: 10px;}
+    .oplarg li{  
+        text-align: justify;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;    
+        width:48%;
+        min-width: 10em;
+        float:left;
+        display:list-item; 
+        height:8em;
+        padding:1em 4em 1em 1em;
+    }
+}
+@media screen and (min-width:960px) {
+    /*
+        de nieuws sectie wordt naast de inhoud geplaatst
+        de opleidingsargumenten worden in 3 kollomen onderverdeeld
+    */
+    .oplarg li{width: 33%;height: 10em;}
+    aside{  /*25+2=27*/
+        float: right;
+        width: 25%;
+        min-height: 100%;       
+    }
+    .kolom{
+        float: left;
+        width: 72%;
+        padding: 0 0 1em 0;
+    }
+    html{height: 100%;}
+    body{height: 100%;}
+    #inhoud{height: 95%;}
+}
+/**CLEARFIX!!**/
+
+/*clearFix hack*/
+.clearFix:before, .clearFix:after{
+    content:  " ";
+    display: table;
+}
+.clearFix:after{
+    clear: both;
+}
+
+/* enkel voor IE6/7*/
+.clearFix{
+    *zoom: 1;
+}
